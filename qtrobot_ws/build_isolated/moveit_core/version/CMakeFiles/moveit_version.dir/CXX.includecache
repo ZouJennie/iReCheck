@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_core/include/moveit/version.h
+
+/home/jennie/irecheck/iReCheck/qtrobot_ws/src/moveit/moveit_core/version/version.cpp
+moveit/version.h
+-
+cstdio
+-
+
