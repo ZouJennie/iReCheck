@@ -1,0 +1,7 @@
+Symlinking /home/jennie/irecheck/iReCheck/qtrobot_ws/devel/lib/libjog_arm_cpp_api.so
+Symlinking /home/jennie/irecheck/iReCheck/qtrobot_ws/devel/lib/pkgconfig/moveit_jog_arm.pc
+Symlinking /home/jennie/irecheck/iReCheck/qtrobot_ws/devel/lib/moveit_jog_arm/jog_server
+Symlinking /home/jennie/irecheck/iReCheck/qtrobot_ws/devel/lib/moveit_jog_arm/cpp_interface_example
+Symlinking /home/jennie/irecheck/iReCheck/qtrobot_ws/devel/lib/moveit_jog_arm/spacenav_to_twist
+Symlinking /home/jennie/irecheck/iReCheck/qtrobot_ws/devel/share/moveit_jog_arm/cmake/moveit_jog_armConfig-version.cmake
+Symlinking /home/jennie/irecheck/iReCheck/qtrobot_ws/devel/share/moveit_jog_arm/cmake/moveit_jog_armConfig.cmake

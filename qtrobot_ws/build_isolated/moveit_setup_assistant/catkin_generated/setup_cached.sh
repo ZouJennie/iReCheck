@@ -7,6 +7,3 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_setup_assistant:$CMAKE_PREFIX_PATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_setup_assistant/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/jennie/irecheck/iReCheck/qtrobot_ws/src/moveit/moveit_setup_assistant:$ROS_PACKAGE_PATH"

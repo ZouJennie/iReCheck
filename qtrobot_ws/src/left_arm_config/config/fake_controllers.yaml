@@ -1,0 +1,9 @@
+controller_list:
+  - name: fake_left_arm_controller
+    joints:
+      - LeftShoulderPitch
+      - LeftShoulderRoll
+      - LeftElbowRoll
+initial:  # Define initial robot poses.
+  - group: left_arm
+    pose: init

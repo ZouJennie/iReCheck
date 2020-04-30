@@ -7,6 +7,3 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_fake_controller_manager:$CMAKE_PREFIX_PATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_fake_controller_manager/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/jennie/irecheck/iReCheck/qtrobot_ws/src/moveit/moveit_plugins/moveit_fake_controller_manager:$ROS_PACKAGE_PATH"

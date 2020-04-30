@@ -1,0 +1,8 @@
+prefix=/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qt_control
+
+Name: qt_control
+Description: Description of qt_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/left_arm_description
+
+Name: left_arm_description
+Description: Description of left_arm_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: left_arm_description
+    relative_path: urdf/qtrobot_left_arm.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/qtrobot_left_arm.srdf
+  CONFIG:
+    author_name: Jennie
+    author_email: zjl93128@hotmail.com
+    generated_timestamp: 1585901195

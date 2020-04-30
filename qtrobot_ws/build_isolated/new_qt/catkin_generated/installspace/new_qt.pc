@@ -1,0 +1,8 @@
+prefix=/home/jennie/irecheck/iReCheck/qtrobot_ws/install_isolated
+
+Name: new_qt
+Description: Description of new_qt
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

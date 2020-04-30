@@ -2,10 +2,10 @@ moveit_setup_assistant_config:
   URDF:
     package: ""
     relative_path: /home/jennie/Téléchargements/qtrobot.urdf
-    xacro_args: "--inorder "
+    xacro_args: ""
   SRDF:
     relative_path: config/qtrobot.srdf
   CONFIG:
-    author_name: Jianling ZOU
+    author_name: Jennie
     author_email: jianlingzou93@gmail.com
-    generated_timestamp: 1584534716
+    generated_timestamp: 1585215258

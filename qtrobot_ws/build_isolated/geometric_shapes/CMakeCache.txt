@@ -66,6 +66,9 @@ CATKIN_SKIP_TESTING:BOOL=OFF
 // using symlinks instead of copying resources
 CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
+//No help, variable specified on the command line.
+CATKIN_WHITELIST_PACKAGES:UNINITIALIZED=left_arm_config
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 

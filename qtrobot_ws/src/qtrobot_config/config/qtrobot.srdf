@@ -10,33 +10,18 @@
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
     <group name="head">
-        <link name="base_link" />
-        <link name="HeadYaw" />
-        <link name="HeadPitch" />
         <joint name="HeadYaw" />
         <joint name="HeadPitch" />
     </group>
     <group name="left_arm">
-        <link name="base_link" />
-        <link name="LeftShoulderPitch" />
-        <link name="LeftShoulderRoll" />
-        <link name="LeftElbowRoll" />
-        <link name="LeftHand" />
         <joint name="LeftShoulderPitch" />
         <joint name="LeftShoulderRoll" />
         <joint name="LeftElbowRoll" />
-        <joint name="LeftHand" />
     </group>
     <group name="right_arm">
-        <link name="base_link" />
-        <link name="RightShoulderPitch" />
-        <link name="RightShoulderRoll" />
-        <link name="RightElbowRoll" />
-        <link name="RightHand" />
         <joint name="RightShoulderPitch" />
         <joint name="RightShoulderRoll" />
         <joint name="RightElbowRoll" />
-        <joint name="RightHand" />
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
     <group_state name="home" group="head">
@@ -44,7 +29,7 @@
         <joint name="HeadYaw" value="0" />
     </group_state>
     <group_state name="home" group="left_arm">
-        <joint name="LeftElbowRoll" value="-0.5917" />
+        <joint name="LeftElbowRoll" value="-0.5916" />
         <joint name="LeftShoulderPitch" value="1.576" />
         <joint name="LeftShoulderRoll" value="-1.0175" />
     </group_state>
@@ -53,62 +38,4 @@
         <joint name="RightShoulderPitch" value="-1.569" />
         <joint name="RightShoulderRoll" value="-1.0175" />
     </group_state>
-    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="left_eef" parent_link="base_link" group="left_arm" />
-    <end_effector name="right_eef" parent_link="base_link" group="right_arm" />
-    <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
-    <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="base_link" />
-    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
-    <disable_collisions link1="HeadPitch" link2="HeadYaw" reason="Adjacent" />
-    <disable_collisions link1="HeadPitch" link2="LeftElbowRoll" reason="Never" />
-    <disable_collisions link1="HeadPitch" link2="LeftHand" reason="Never" />
-    <disable_collisions link1="HeadPitch" link2="LeftShoulderPitch" reason="Never" />
-    <disable_collisions link1="HeadPitch" link2="LeftShoulderRoll" reason="Never" />
-    <disable_collisions link1="HeadPitch" link2="RightElbowRoll" reason="Never" />
-    <disable_collisions link1="HeadPitch" link2="RightHand" reason="Never" />
-    <disable_collisions link1="HeadPitch" link2="RightShoulderPitch" reason="Never" />
-    <disable_collisions link1="HeadPitch" link2="RightShoulderRoll" reason="Never" />
-    <disable_collisions link1="HeadPitch" link2="base_link" reason="Never" />
-    <disable_collisions link1="HeadYaw" link2="LeftElbowRoll" reason="Never" />
-    <disable_collisions link1="HeadYaw" link2="LeftHand" reason="Never" />
-    <disable_collisions link1="HeadYaw" link2="LeftShoulderPitch" reason="Never" />
-    <disable_collisions link1="HeadYaw" link2="LeftShoulderRoll" reason="Never" />
-    <disable_collisions link1="HeadYaw" link2="RightElbowRoll" reason="Never" />
-    <disable_collisions link1="HeadYaw" link2="RightHand" reason="Never" />
-    <disable_collisions link1="HeadYaw" link2="RightShoulderPitch" reason="Never" />
-    <disable_collisions link1="HeadYaw" link2="RightShoulderRoll" reason="Never" />
-    <disable_collisions link1="HeadYaw" link2="base_link" reason="Adjacent" />
-    <disable_collisions link1="LeftElbowRoll" link2="LeftHand" reason="Adjacent" />
-    <disable_collisions link1="LeftElbowRoll" link2="LeftShoulderPitch" reason="Never" />
-    <disable_collisions link1="LeftElbowRoll" link2="LeftShoulderRoll" reason="Adjacent" />
-    <disable_collisions link1="LeftElbowRoll" link2="RightElbowRoll" reason="Never" />
-    <disable_collisions link1="LeftElbowRoll" link2="RightHand" reason="Never" />
-    <disable_collisions link1="LeftElbowRoll" link2="RightShoulderPitch" reason="Never" />
-    <disable_collisions link1="LeftElbowRoll" link2="RightShoulderRoll" reason="Never" />
-    <disable_collisions link1="LeftElbowRoll" link2="base_link" reason="Never" />
-    <disable_collisions link1="LeftHand" link2="LeftShoulderPitch" reason="Never" />
-    <disable_collisions link1="LeftHand" link2="LeftShoulderRoll" reason="Never" />
-    <disable_collisions link1="LeftHand" link2="RightElbowRoll" reason="Never" />
-    <disable_collisions link1="LeftHand" link2="RightShoulderPitch" reason="Never" />
-    <disable_collisions link1="LeftHand" link2="RightShoulderRoll" reason="Never" />
-    <disable_collisions link1="LeftShoulderPitch" link2="LeftShoulderRoll" reason="Adjacent" />
-    <disable_collisions link1="LeftShoulderPitch" link2="RightElbowRoll" reason="Never" />
-    <disable_collisions link1="LeftShoulderPitch" link2="RightHand" reason="Never" />
-    <disable_collisions link1="LeftShoulderPitch" link2="RightShoulderPitch" reason="Never" />
-    <disable_collisions link1="LeftShoulderPitch" link2="RightShoulderRoll" reason="Never" />
-    <disable_collisions link1="LeftShoulderPitch" link2="base_link" reason="Adjacent" />
-    <disable_collisions link1="LeftShoulderRoll" link2="RightElbowRoll" reason="Never" />
-    <disable_collisions link1="LeftShoulderRoll" link2="RightHand" reason="Never" />
-    <disable_collisions link1="LeftShoulderRoll" link2="RightShoulderPitch" reason="Never" />
-    <disable_collisions link1="LeftShoulderRoll" link2="RightShoulderRoll" reason="Never" />
-    <disable_collisions link1="LeftShoulderRoll" link2="base_link" reason="Never" />
-    <disable_collisions link1="RightElbowRoll" link2="RightHand" reason="Adjacent" />
-    <disable_collisions link1="RightElbowRoll" link2="RightShoulderPitch" reason="Never" />
-    <disable_collisions link1="RightElbowRoll" link2="RightShoulderRoll" reason="Adjacent" />
-    <disable_collisions link1="RightElbowRoll" link2="base_link" reason="Never" />
-    <disable_collisions link1="RightHand" link2="RightShoulderPitch" reason="Never" />
-    <disable_collisions link1="RightHand" link2="RightShoulderRoll" reason="Never" />
-    <disable_collisions link1="RightShoulderPitch" link2="RightShoulderRoll" reason="Adjacent" />
-    <disable_collisions link1="RightShoulderPitch" link2="base_link" reason="Adjacent" />
-    <disable_collisions link1="RightShoulderRoll" link2="base_link" reason="Never" />
 </robot>

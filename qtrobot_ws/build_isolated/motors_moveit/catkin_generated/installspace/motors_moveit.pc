@@ -1,0 +1,8 @@
+prefix=/home/jennie/irecheck/iReCheck/qtrobot_ws/install_isolated
+
+Name: motors_moveit
+Description: Description of motors_moveit
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<robot name="qtrobot_left_arm">
+
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.02 0.02 0.337"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0.1685"/>
+    </visual>
+  </link>
+<!-- Left Arm -->
+  <link name="LeftShoulderPitch">
+    <visual>
+      <geometry>
+        <cylinder length="0.04" radius="0.02"/>
+      </geometry>
+      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+      <material name="white"/>
+    </visual>
+  </link>
+
+  <link name="LeftShoulderRoll">
+    <visual>
+      <geometry>
+        <cylinder length="0.04" radius="0.02"/>
+      </geometry>
+      <origin rpy="0 1.5708 0" xyz="0 0 0"/>
+      <material name="white"/>
+    </visual>
+  </link>
+
+  <link name="LeftElbowRoll">
+    <visual>
+      <geometry>
+        <cylinder length="0.04" radius="0.02"/>
+      </geometry>
+      <origin rpy="0 1.5708 0" xyz="0 0 0"/>
+      <material name="white"/>
+    </visual>
+  </link>
+
+  <link name="LeftHand">
+    <visual>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="LeftShoulderPitch" type="revolute">
+    <parent link="base_link"/>
+    <child link="LeftShoulderPitch"/>
+    <origin rpy="0 0 0" xyz="0 0.08 0.396"/> -->
+    <axis xyz="0 1 0"/>
+    <limit effort="1000" lower="-2.44346" upper="2.44346" velocity="100"/>
+  </joint>
+
+  <joint name="LeftShoulderRoll" type="revolute">
+    <parent link="LeftShoulderPitch"/>
+    <child link="LeftShoulderRoll"/>
+    <origin rpy="0 -1.5708 0" xyz="0 0.0445 0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="1000" lower="-1.309" upper="0.122173" velocity="100"/>
+  </joint>
+
+  <joint name="LeftElbowRoll" type="revolute">
+    <parent link="LeftShoulderRoll"/>
+    <child link="LeftElbowRoll"/>
+    <origin rpy="0 0 0" xyz="0 0.07708 0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="1000" lower="-1.5708" upper="-0.122173" velocity="100"/>
+  </joint>
+
+  <joint name="LeftHand" type="fixed">
+    <parent link="LeftElbowRoll"/>
+    <child link="LeftHand"/>
+    <origin rpy="1.5708 0 1.5708" xyz="0 0.184 0"/>
+  </joint>
+
+</robot>
