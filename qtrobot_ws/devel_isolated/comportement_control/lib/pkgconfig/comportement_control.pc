@@ -1,0 +1,8 @@
+prefix=/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/comportement_control
+
+Name: comportement_control
+Description: Description of comportement_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -7,4 +7,3 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/jennie/irecheck/iReCheck/qtrobot_ws/build_isolated/geometric_shapes"
