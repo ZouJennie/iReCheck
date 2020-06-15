@@ -167,6 +167,7 @@ motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.d
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/moveit_motion_planning_rviz_plugin_core_automoc.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Wrench.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/moveit_motion_planning_rviz_plugin_core_automoc.cpp.o: /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/moveit_motion_planning_rviz_plugin_core_automoc.cpp.o: /opt/ros/kinetic/include/interactive_markers/menu_handler.h
+motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/moveit_motion_planning_rviz_plugin_core_automoc.cpp.o: /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/moveit_motion_planning_rviz_plugin_core_automoc.cpp.o: /opt/ros/kinetic/include/kdl/chain.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/moveit_motion_planning_rviz_plugin_core_automoc.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/moveit_motion_planning_rviz_plugin_core_automoc.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver_recursive_newton_euler.hpp
@@ -977,6 +978,7 @@ motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.d
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_display.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Wrench.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_display.cpp.o: /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_display.cpp.o: /opt/ros/kinetic/include/interactive_markers/menu_handler.h
+motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_display.cpp.o: /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_display.cpp.o: /opt/ros/kinetic/include/kdl/chain.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_display.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_display.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver_recursive_newton_euler.hpp
@@ -1877,6 +1879,7 @@ motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.d
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Wrench.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame.cpp.o: /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame.cpp.o: /opt/ros/kinetic/include/interactive_markers/menu_handler.h
+motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame.cpp.o: /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame.cpp.o: /opt/ros/kinetic/include/kdl/chain.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver_recursive_newton_euler.hpp
@@ -2760,6 +2763,7 @@ motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.d
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_context.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Wrench.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_context.cpp.o: /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_context.cpp.o: /opt/ros/kinetic/include/interactive_markers/menu_handler.h
+motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_context.cpp.o: /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_context.cpp.o: /opt/ros/kinetic/include/kdl/chain.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_context.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_context.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver_recursive_newton_euler.hpp
@@ -3621,6 +3625,7 @@ motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.d
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_joints_widget.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Wrench.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_joints_widget.cpp.o: /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_joints_widget.cpp.o: /opt/ros/kinetic/include/interactive_markers/menu_handler.h
+motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_joints_widget.cpp.o: /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_joints_widget.cpp.o: /opt/ros/kinetic/include/kdl/chain.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_joints_widget.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_joints_widget.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver_recursive_newton_euler.hpp
@@ -4449,6 +4454,7 @@ motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.d
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_manipulation.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Wrench.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_manipulation.cpp.o: /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_manipulation.cpp.o: /opt/ros/kinetic/include/interactive_markers/menu_handler.h
+motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_manipulation.cpp.o: /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_manipulation.cpp.o: /opt/ros/kinetic/include/kdl/chain.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_manipulation.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_manipulation.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver_recursive_newton_euler.hpp
@@ -5307,6 +5313,7 @@ motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.d
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_objects.cpp.o: /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_objects.cpp.o: /opt/ros/kinetic/include/interactive_markers/menu_handler.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_objects.cpp.o: /opt/ros/kinetic/include/interactive_markers/tools.h
+motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_objects.cpp.o: /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_objects.cpp.o: /opt/ros/kinetic/include/kdl/chain.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_objects.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_objects.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver_recursive_newton_euler.hpp
@@ -6199,6 +6206,7 @@ motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.d
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_planning.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Wrench.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_planning.cpp.o: /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_planning.cpp.o: /opt/ros/kinetic/include/interactive_markers/menu_handler.h
+motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_planning.cpp.o: /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_planning.cpp.o: /opt/ros/kinetic/include/kdl/chain.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_planning.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_planning.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver_recursive_newton_euler.hpp
@@ -7058,6 +7066,7 @@ motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.d
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_scenes.cpp.o: /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_scenes.cpp.o: /opt/ros/kinetic/include/interactive_markers/menu_handler.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_scenes.cpp.o: /opt/ros/kinetic/include/interactive_markers/tools.h
+motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_scenes.cpp.o: /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_scenes.cpp.o: /opt/ros/kinetic/include/kdl/chain.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_scenes.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_scenes.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver_recursive_newton_euler.hpp
@@ -7922,6 +7931,7 @@ motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.d
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_states.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Wrench.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_states.cpp.o: /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_states.cpp.o: /opt/ros/kinetic/include/interactive_markers/menu_handler.h
+motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_states.cpp.o: /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_states.cpp.o: /opt/ros/kinetic/include/kdl/chain.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_states.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver.hpp
 motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core.dir/src/motion_planning_frame_states.cpp.o: /opt/ros/kinetic/include/kdl/chainidsolver_recursive_newton_euler.hpp

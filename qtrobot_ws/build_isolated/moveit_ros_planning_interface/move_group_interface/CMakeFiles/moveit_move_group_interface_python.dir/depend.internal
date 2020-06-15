@@ -95,18 +95,11 @@ move_group_interface/CMakeFiles/moveit_move_group_interface_python.dir/src/wrap_
  /opt/ros/kinetic/include/eigen_stl_containers/eigen_stl_containers.h
  /opt/ros/kinetic/include/eigen_stl_containers/eigen_stl_map_container.h
  /opt/ros/kinetic/include/eigen_stl_containers/eigen_stl_vector_container.h
- /opt/ros/kinetic/include/eigenpy/deprecated.hh
  /opt/ros/kinetic/include/eigenpy/details.hpp
- /opt/ros/kinetic/include/eigenpy/details/rvalue_from_python_data.hpp
  /opt/ros/kinetic/include/eigenpy/eigenpy.hpp
- /opt/ros/kinetic/include/eigenpy/eigenpy_export.h
- /opt/ros/kinetic/include/eigenpy/exception.hpp
  /opt/ros/kinetic/include/eigenpy/expose.hpp
  /opt/ros/kinetic/include/eigenpy/fwd.hpp
- /opt/ros/kinetic/include/eigenpy/map.hpp
- /opt/ros/kinetic/include/eigenpy/ref.hpp
  /opt/ros/kinetic/include/eigenpy/registration.hpp
- /opt/ros/kinetic/include/eigenpy/stride.hpp
  /opt/ros/kinetic/include/geometry_msgs/Accel.h
  /opt/ros/kinetic/include/geometry_msgs/Point.h
  /opt/ros/kinetic/include/geometry_msgs/PointStamped.h

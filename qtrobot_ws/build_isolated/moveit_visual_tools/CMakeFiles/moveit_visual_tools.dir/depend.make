@@ -116,6 +116,7 @@ CMakeFiles/moveit_visual_tools.dir/src/imarker_end_effector.cpp.o: /opt/ros/kine
 CMakeFiles/moveit_visual_tools.dir/src/imarker_end_effector.cpp.o: /opt/ros/kinetic/include/graph_msgs/GeometryGraph.h
 CMakeFiles/moveit_visual_tools.dir/src/imarker_end_effector.cpp.o: /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
 CMakeFiles/moveit_visual_tools.dir/src/imarker_end_effector.cpp.o: /opt/ros/kinetic/include/interactive_markers/menu_handler.h
+CMakeFiles/moveit_visual_tools.dir/src/imarker_end_effector.cpp.o: /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
 CMakeFiles/moveit_visual_tools.dir/src/imarker_end_effector.cpp.o: /opt/ros/kinetic/include/object_recognition_msgs/ObjectType.h
 CMakeFiles/moveit_visual_tools.dir/src/imarker_end_effector.cpp.o: /opt/ros/kinetic/include/octomap/AbstractOcTree.h
 CMakeFiles/moveit_visual_tools.dir/src/imarker_end_effector.cpp.o: /opt/ros/kinetic/include/octomap/AbstractOccupancyOcTree.h
@@ -547,6 +548,7 @@ CMakeFiles/moveit_visual_tools.dir/src/imarker_robot_state.cpp.o: /opt/ros/kinet
 CMakeFiles/moveit_visual_tools.dir/src/imarker_robot_state.cpp.o: /opt/ros/kinetic/include/graph_msgs/GeometryGraph.h
 CMakeFiles/moveit_visual_tools.dir/src/imarker_robot_state.cpp.o: /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
 CMakeFiles/moveit_visual_tools.dir/src/imarker_robot_state.cpp.o: /opt/ros/kinetic/include/interactive_markers/menu_handler.h
+CMakeFiles/moveit_visual_tools.dir/src/imarker_robot_state.cpp.o: /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
 CMakeFiles/moveit_visual_tools.dir/src/imarker_robot_state.cpp.o: /opt/ros/kinetic/include/object_recognition_msgs/ObjectType.h
 CMakeFiles/moveit_visual_tools.dir/src/imarker_robot_state.cpp.o: /opt/ros/kinetic/include/octomap/AbstractOcTree.h
 CMakeFiles/moveit_visual_tools.dir/src/imarker_robot_state.cpp.o: /opt/ros/kinetic/include/octomap/AbstractOccupancyOcTree.h

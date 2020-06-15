@@ -3,6 +3,6 @@ prefix=/home/jennie/irecheck/iReCheck/qtrobot_ws/install_isolated
 Name: comportement_control
 Description: Description of comportement_control
 Version: 0.0.0
-Cflags: 
+Cflags: -I${prefix}/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: message_runtime

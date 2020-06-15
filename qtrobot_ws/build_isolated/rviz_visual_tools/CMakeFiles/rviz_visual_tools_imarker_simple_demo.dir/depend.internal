@@ -25,6 +25,7 @@ CMakeFiles/rviz_visual_tools_imarker_simple_demo.dir/src/imarker_simple_demo.cpp
  /opt/ros/kinetic/include/graph_msgs/GeometryGraph.h
  /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
  /opt/ros/kinetic/include/interactive_markers/menu_handler.h
+ /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
  /opt/ros/kinetic/include/ros/advertise_options.h
  /opt/ros/kinetic/include/ros/advertise_service_options.h
  /opt/ros/kinetic/include/ros/assert.h

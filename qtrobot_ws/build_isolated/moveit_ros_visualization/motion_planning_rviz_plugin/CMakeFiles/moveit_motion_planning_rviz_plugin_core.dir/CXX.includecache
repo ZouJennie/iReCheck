@@ -3041,6 +3041,8 @@ visualization_msgs/InteractiveMarkerUpdate.h
 -
 visualization_msgs/InteractiveMarkerFeedback.h
 -
+interactive_markers/visibility_control.hpp
+-
 boost/scoped_ptr.hpp
 -
 boost/thread/thread.hpp
@@ -3061,6 +3063,8 @@ visualization_msgs/MenuEntry.h
 -
 interactive_markers/interactive_marker_server.h
 -
+interactive_markers/visibility_control.hpp
+-
 boost/function.hpp
 -
 boost/unordered_map.hpp
@@ -3069,6 +3073,10 @@ boost/unordered_map.hpp
 /opt/ros/kinetic/include/interactive_markers/tools.h
 visualization_msgs/InteractiveMarker.h
 -
+interactive_markers/visibility_control.hpp
+-
+
+/opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
 
 /opt/ros/kinetic/include/kdl/chain.hpp
 segment.hpp

@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(comportement_control_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/comportement_control/include " STREQUAL " ")
   set(comportement_control_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/comportement_control/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/comportement_control/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qtrobot_ikfast_right_arm_plugin/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qtrobot_ikfast_left_arm_plugin/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/motors_moveit/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/left_arm_config/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/left_arm_description/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_tutorials/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_visual_tools/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/rviz_visual_tools/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qtrobot_config/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qt_control/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/panda_moveit_config/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/new_qt/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_control_interface/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_simple_controller_manager/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_setup_assistant/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_runtime/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_visualization/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_planners_chomp/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_jog_arm/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_planning_interface/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_benchmarks/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_warehouse/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_robot_interaction/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_manipulation/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_move_group/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_planners_ompl/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_kinematics/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_fake_controller_manager/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_planning/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_perception/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_occupancy_map_monitor/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_plugins/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_planners/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_chomp_optimizer_adapter/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/chomp_motion_planner/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_core/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_msgs/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_commander/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/geometric_shapes/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/comportement_control/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/comportement_control/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qtrobot_ikfast_right_arm_plugin/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qtrobot_ikfast_left_arm_plugin/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/motors_moveit/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/left_arm_config/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/left_arm_description/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_tutorials/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_visual_tools/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/rviz_visual_tools/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qtrobot_config/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qt_control/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/panda_moveit_config/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/new_qt/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_control_interface/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_simple_controller_manager/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_setup_assistant/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_runtime/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_visualization/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_planners_chomp/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_jog_arm/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_planning_interface/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_benchmarks/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_warehouse/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_robot_interaction/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_manipulation/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_move_group/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_planners_ompl/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_kinematics/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_fake_controller_manager/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_planning/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_perception/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_occupancy_map_monitor/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_plugins/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_planners/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_chomp_optimizer_adapter/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/chomp_motion_planner/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_core/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_msgs/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_commander/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/geometric_shapes/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(comportement_control_EXPORTED_TARGETS "")
+set(comportement_control_EXPORTED_TARGETS "comportement_control_generate_messages_cpp;comportement_control_generate_messages_eus;comportement_control_generate_messages_lisp;comportement_control_generate_messages_nodejs;comportement_control_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${comportement_control_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -185,7 +185,7 @@ foreach(t ${comportement_control_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "")
+set(depends "message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND comportement_control_EXPORTED_TARGETS ${${comportement_control_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "comportement_control-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${comportement_control_DIR}/${extra})

@@ -124,7 +124,43 @@ file(INSTALL DESTINATION "/home/jennie/irecheck/iReCheck/qtrobot_ws/install_isol
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/comportement_control/msg" TYPE FILE FILES "/home/jennie/irecheck/iReCheck/qtrobot_ws/src/comportement_control/msg/GestureCommand.msg")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/comportement_control/cmake" TYPE FILE FILES "/home/jennie/irecheck/iReCheck/qtrobot_ws/build_isolated/comportement_control/catkin_generated/installspace/comportement_control-msg-paths.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/comportement_control/include/comportement_control")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/comportement_control/share/roseus/ros/comportement_control")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/comportement_control/share/common-lisp/ros/comportement_control")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/comportement_control/share/gennodejs/ros/comportement_control")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/comportement_control/lib/python2.7/dist-packages/comportement_control")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/comportement_control/lib/python2.7/dist-packages/comportement_control")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jennie/irecheck/iReCheck/qtrobot_ws/build_isolated/comportement_control/catkin_generated/installspace/comportement_control.pc")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/comportement_control/cmake" TYPE FILE FILES "/home/jennie/irecheck/iReCheck/qtrobot_ws/build_isolated/comportement_control/catkin_generated/installspace/comportement_control-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

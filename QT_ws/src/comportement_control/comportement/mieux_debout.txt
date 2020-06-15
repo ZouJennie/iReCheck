@@ -1,0 +1,2 @@
+"QT/stretch";0.8;
+0;0;0;"QT/yawn";"ah, on est mieux debout"

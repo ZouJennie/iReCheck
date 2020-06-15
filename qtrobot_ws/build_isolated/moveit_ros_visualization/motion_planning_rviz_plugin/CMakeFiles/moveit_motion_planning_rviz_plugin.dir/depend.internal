@@ -164,6 +164,7 @@ motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin.dir/sr
  /opt/ros/kinetic/include/geometry_msgs/Wrench.h
  /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
  /opt/ros/kinetic/include/interactive_markers/menu_handler.h
+ /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
  /opt/ros/kinetic/include/kdl/chain.hpp
  /opt/ros/kinetic/include/kdl/chainidsolver.hpp
  /opt/ros/kinetic/include/kdl/chainidsolver_recursive_newton_euler.hpp

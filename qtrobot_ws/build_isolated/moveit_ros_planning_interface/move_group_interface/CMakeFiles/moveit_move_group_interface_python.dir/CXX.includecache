@@ -1470,8 +1470,6 @@ Eigen/StdVector
 vector
 -
 
-/opt/ros/kinetic/include/eigenpy/deprecated.hh
-
 /opt/ros/kinetic/include/eigenpy/details.hpp
 eigenpy/details/rvalue_from_python_data.hpp
 /opt/ros/kinetic/include/eigenpy/eigenpy/details/rvalue_from_python_data.hpp
@@ -1490,12 +1488,6 @@ eigenpy/registration.hpp
 eigenpy/map.hpp
 /opt/ros/kinetic/include/eigenpy/eigenpy/map.hpp
 
-/opt/ros/kinetic/include/eigenpy/details/rvalue_from_python_data.hpp
-boost/python/converter/rvalue_from_python_data.hpp
--
-Eigen/Core
--
-
 /opt/ros/kinetic/include/eigenpy/eigenpy.hpp
 eigenpy/fwd.hpp
 /opt/ros/kinetic/include/eigenpy/eigenpy/fwd.hpp
@@ -1507,16 +1499,6 @@ eigenpy/ref.hpp
 /opt/ros/kinetic/include/eigenpy/eigenpy/ref.hpp
 eigenpy/details.hpp
 /opt/ros/kinetic/include/eigenpy/eigenpy/details.hpp
-
-/opt/ros/kinetic/include/eigenpy/eigenpy_export.h
-
-/opt/ros/kinetic/include/eigenpy/exception.hpp
-boost/python.hpp
--
-exception
--
-string
--
 
 /opt/ros/kinetic/include/eigenpy/expose.hpp
 eigenpy/registration.hpp
@@ -1534,30 +1516,10 @@ numpy/noprefix.h
 eigenpy/expose.hpp
 /opt/ros/kinetic/include/eigenpy/eigenpy/expose.hpp
 
-/opt/ros/kinetic/include/eigenpy/map.hpp
-eigenpy/fwd.hpp
-/opt/ros/kinetic/include/eigenpy/eigenpy/fwd.hpp
-numpy/arrayobject.h
--
-eigenpy/exception.hpp
-/opt/ros/kinetic/include/eigenpy/eigenpy/exception.hpp
-eigenpy/stride.hpp
-/opt/ros/kinetic/include/eigenpy/eigenpy/stride.hpp
-
-/opt/ros/kinetic/include/eigenpy/ref.hpp
-eigenpy/fwd.hpp
-/opt/ros/kinetic/include/eigenpy/eigenpy/fwd.hpp
-eigenpy/stride.hpp
-/opt/ros/kinetic/include/eigenpy/eigenpy/stride.hpp
-
 /opt/ros/kinetic/include/eigenpy/registration.hpp
 boost/python.hpp
 -
 boost/python/scope.hpp
--
-
-/opt/ros/kinetic/include/eigenpy/stride.hpp
-Eigen/Core
 -
 
 /opt/ros/kinetic/include/geometry_msgs/Accel.h

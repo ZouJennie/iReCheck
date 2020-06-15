@@ -1,0 +1,8 @@
+prefix=/home/jennie/irecheck/iReCheck/QT_ws/install
+
+Name: comportement_control
+Description: Description of comportement_control
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

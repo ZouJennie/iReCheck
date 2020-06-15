@@ -1,0 +1,2 @@
+"QT/cry";0.85;
+0;0;0;"QT/cry";"j'écris vraiment très mal";

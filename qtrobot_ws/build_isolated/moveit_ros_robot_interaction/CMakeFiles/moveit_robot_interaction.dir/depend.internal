@@ -52,6 +52,7 @@ CMakeFiles/moveit_robot_interaction.dir/src/interaction_handler.cpp.o
  /opt/ros/kinetic/include/geometry_msgs/WrenchStamped.h
  /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
  /opt/ros/kinetic/include/interactive_markers/menu_handler.h
+ /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
  /opt/ros/kinetic/include/kdl/frames.hpp
  /opt/ros/kinetic/include/kdl/frames.inl
  /opt/ros/kinetic/include/kdl/utilities/kdl-config.h
@@ -1266,6 +1267,7 @@ CMakeFiles/moveit_robot_interaction.dir/src/robot_interaction.cpp.o
  /opt/ros/kinetic/include/geometry_msgs/WrenchStamped.h
  /opt/ros/kinetic/include/interactive_markers/interactive_marker_server.h
  /opt/ros/kinetic/include/interactive_markers/menu_handler.h
+ /opt/ros/kinetic/include/interactive_markers/visibility_control.hpp
  /opt/ros/kinetic/include/kdl/frames.hpp
  /opt/ros/kinetic/include/kdl/frames.inl
  /opt/ros/kinetic/include/kdl/utilities/kdl-config.h
