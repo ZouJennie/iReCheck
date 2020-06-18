@@ -1,3 +1,2 @@
 "QT/happy";0.85;
-0;-15;5;"QT/happy";"Bien joué";
-0;0;0;"";"";
+"QT/happy";"Bien joué";

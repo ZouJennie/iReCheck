@@ -1,2 +1,2 @@
 "QT/handclap";0.8;
-0;0;0;"QT/happy";"Félicitations";
+"QT/happy";"Félicitations";

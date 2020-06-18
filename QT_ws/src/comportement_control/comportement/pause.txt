@@ -1,2 +1,2 @@
 "QT/breathing_exercise";0.85;
-0;0;0;"QT/calmig_down_exercise_nose";"Tu semble fatigué, faisons une pause et recommençons";
+"QT/calmig_down_exercise_nose";"Tu semble fatigué, faisons une pause et recommençons";

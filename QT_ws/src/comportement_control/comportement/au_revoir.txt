@@ -1,2 +1,2 @@
 "QT/bye-bye";0.8;
-0;0;0;"QT/showing_smile";"Au revoir";
+"QT/showing_smile";"Au revoir";

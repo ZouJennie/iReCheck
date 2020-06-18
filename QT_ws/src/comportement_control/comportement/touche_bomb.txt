@@ -1,2 +1,2 @@
 "QT/challenge";0.85;
-0;0;0;"QT/talking";"Combien d'explosions maximum?"
+"QT/talking";"Combien d'explosions maximum?"

@@ -1,2 +1,2 @@
 "QT/so";1;
-0;0;0;"QT/confused";"Oui, et alors?"
+"QT/confused";"Oui, et alors?"

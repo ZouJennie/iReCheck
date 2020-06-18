@@ -1,2 +1,2 @@
 "QT/challenge";0.85;
-0;0;0;"QT/talking";"Combien de fois maximum attends-tu à sortir de la trajectoire pendant l'activité de vitesse?"
+"QT/talking";"Combien de fois maximum attends-tu à sortir de la trajectoire pendant l'activité de vitesse?"

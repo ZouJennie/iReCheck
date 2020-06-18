@@ -1,2 +1,2 @@
 "QT/sneezing";0.85;
-0;0;0;"QT/with_a_cold_cleaning_nose";"je suis malade"
+"QT/with_a_cold_cleaning_nose";"je suis malade"
