@@ -22,7 +22,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow,RobotBehaviour):
 		self.emotion = []
 		self.speech = []
 
-		#self.muscle.clicked.connect(self.test)
+		# set action when button is clicked
 		self.muscle.clicked.connect(lambda:self.Action("muscle"))
 		self.colere.clicked.connect(lambda:self.Action("air_en_colere"))
 		self.progresse.clicked.connect(lambda:self.Action("progresse"))
@@ -53,6 +53,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow,RobotBehaviour):
 
 
 	def Action(self,name):
+		# run the control_publisher.py to control the robot and delete the content of every parameter when another button is clicked
 		self.head_yaw = []
 		self.head_pitch = []
 		self.head_vel =[]
@@ -63,8 +64,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow,RobotBehaviour):
 		self.load_info(name)
 		self.realisation()
 
-	def test(self):
-		print("yes")
 
 if __name__ == '__main__':
 	

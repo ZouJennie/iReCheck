@@ -47,6 +47,8 @@ qtrobot@QTXXX: rosrun qt_behaviour_control control_subscriber.py
 ```
 
 ### Run the program in your PC
+At first you need change the file path in the program `control_publisher.py`. So you replace "/home/isir/iReCheck/QT_ws/src/comportement_control/comportement/" of line 28 by your own path of the comportement folder.
+
 You need now run the interface in your PC:
 ```
 $ cd ~/YOURWORKSPACE/
