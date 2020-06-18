@@ -25,7 +25,7 @@ class RobotBehaviour(object):
 		
 	def load_info(self,name):
 		# import la fichier de comportement 
-		f = open("/home/jennie/irecheck/iReCheck/QT_ws/src/comportement_control/comportement/"+name+".txt", "r")
+		f = open("/home/isir/iReCheck/QT_ws/src/comportement_control/comportement/"+name+".txt", "r")
 		line = f.readline()
 		a=line.split(";") 
 		# first line is infomation of gesture 

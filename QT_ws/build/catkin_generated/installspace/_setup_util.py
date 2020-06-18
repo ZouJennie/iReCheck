@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 # Software License Agreement (BSD License)
@@ -49,17 +49,11 @@ system = platform.system()
 IS_DARWIN = (system == 'Darwin')
 IS_WINDOWS = (system == 'Windows')
 
-PATH_TO_ADD_SUFFIX = ['bin']
-if IS_WINDOWS:
-    # while catkin recommends putting dll's into bin, 3rd party packages often put dll's into lib
-    # since Windows finds dll's via the PATH variable, prepend it with path to lib
-    PATH_TO_ADD_SUFFIX.extend([['lib', os.path.join('lib', 'x86_64-linux-gnu')]])
-
 # subfolder of workspace prepended to CMAKE_PREFIX_PATH
 ENV_VAR_SUBFOLDERS = {
     'CMAKE_PREFIX_PATH': '',
     'LD_LIBRARY_PATH' if not IS_DARWIN else 'DYLD_LIBRARY_PATH': ['lib', os.path.join('lib', 'x86_64-linux-gnu')],
-    'PATH': PATH_TO_ADD_SUFFIX,
+    'PATH': 'bin',
     'PKG_CONFIG_PATH': [os.path.join('lib', 'pkgconfig'), os.path.join('lib', 'x86_64-linux-gnu', 'pkgconfig')],
     'PYTHONPATH': 'lib/python2.7/dist-packages',
 }
@@ -256,7 +250,6 @@ def find_env_hooks(environ, cmake_prefix_path):
 def _parse_arguments(args=None):
     parser = argparse.ArgumentParser(description='Generates code blocks for the setup.SHELL script.')
     parser.add_argument('--extend', action='store_true', help='Skip unsetting previous environment variables to extend context')
-    parser.add_argument('--local', action='store_true', help='Only consider this prefix path and ignore other prefix path in the environment')
     return parser.parse_known_args(args=args)[0]
 
 
@@ -268,19 +261,10 @@ if __name__ == '__main__':
             print(e, file=sys.stderr)
             sys.exit(1)
 
-        if not args.local:
-            # environment at generation time
-            CMAKE_PREFIX_PATH = '/home/jennie/irecheck/iReCheck/QT_ws/devel;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/comportement_control;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qtrobot_ikfast_right_arm_plugin;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qtrobot_ikfast_left_arm_plugin;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/motors_moveit;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/left_arm_config;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/left_arm_description;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_tutorials;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_visual_tools;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/rviz_visual_tools;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qtrobot_config;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qt_control;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/panda_moveit_config;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/new_qt;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_control_interface;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_simple_controller_manager;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_setup_assistant;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_runtime;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_visualization;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_planners_chomp;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_jog_arm;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_planning_interface;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_benchmarks;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_warehouse;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_robot_interaction;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_manipulation;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_move_group;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_planners_ompl;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_kinematics;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_fake_controller_manager;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_planning;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_perception;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_occupancy_map_monitor;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_plugins;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_planners;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_chomp_optimizer_adapter;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/chomp_motion_planner;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_core;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_msgs;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_commander;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/geometric_shapes;/opt/ros/kinetic'.split(';')
-        else:
-            # don't consider any other prefix path than this one
-            CMAKE_PREFIX_PATH = []
+        # environment at generation time
+        CMAKE_PREFIX_PATH = '/opt/ros/kinetic'.split(';')
         # prepend current workspace if not already part of CPP
         base_path = os.path.dirname(__file__)
-        # CMAKE_PREFIX_PATH uses forward slash on all platforms, but __file__ is platform dependent
-        # base_path on Windows contains backward slashes, need to be converted to forward slashes before comparison
-        if os.path.sep != '/':
-            base_path = base_path.replace(os.path.sep, '/')
-
         if base_path not in CMAKE_PREFIX_PATH:
             CMAKE_PREFIX_PATH.insert(0, base_path)
         CMAKE_PREFIX_PATH = os.pathsep.join(CMAKE_PREFIX_PATH)

@@ -67,14 +67,14 @@ set(comportement_control_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(comportement_control_SOURCE_PREFIX /home/jennie/irecheck/iReCheck/QT_ws/src/comportement_control)
-  set(comportement_control_DEVEL_PREFIX /home/jennie/irecheck/iReCheck/QT_ws/devel)
+  set(comportement_control_SOURCE_PREFIX /home/isir/iReCheck/QT_ws/src/comportement_control)
+  set(comportement_control_DEVEL_PREFIX /home/isir/iReCheck/QT_ws/devel)
   set(comportement_control_INSTALL_PREFIX "")
   set(comportement_control_PREFIX ${comportement_control_DEVEL_PREFIX})
 else()
   set(comportement_control_SOURCE_PREFIX "")
   set(comportement_control_DEVEL_PREFIX "")
-  set(comportement_control_INSTALL_PREFIX /home/jennie/irecheck/iReCheck/QT_ws/install)
+  set(comportement_control_INSTALL_PREFIX /home/isir/iReCheck/QT_ws/install)
   set(comportement_control_PREFIX ${comportement_control_INSTALL_PREFIX})
 endif()
 
@@ -110,7 +110,7 @@ if(NOT "include " STREQUAL " ")
         message(FATAL_ERROR "Project 'comportement_control' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'comportement_control' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '\${prefix}/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'comportement_control' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/isir/iReCheck/QT_ws/install/${idir}'.  ${_report}")
     endif()
     _list_append_unique(comportement_control_INCLUDE_DIRS ${include})
   endforeach()
@@ -121,31 +121,6 @@ foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
     list(APPEND comportement_control_LIBRARIES ${library})
-  elseif(${library} MATCHES "^-l")
-    list(APPEND comportement_control_LIBRARIES ${library})
-  elseif(${library} MATCHES "^-")
-    # This is a linker flag/option (like -pthread)
-    # There's no standard variable for these, so create an interface library to hold it
-    if(NOT comportement_control_NUM_DUMMY_TARGETS)
-      set(comportement_control_NUM_DUMMY_TARGETS 0)
-    endif()
-    # Make sure the target name is unique
-    set(interface_target_name "catkin::comportement_control::wrapped-linker-option${comportement_control_NUM_DUMMY_TARGETS}")
-    while(TARGET "${interface_target_name}")
-      math(EXPR comportement_control_NUM_DUMMY_TARGETS "${comportement_control_NUM_DUMMY_TARGETS}+1")
-      set(interface_target_name "catkin::comportement_control::wrapped-linker-option${comportement_control_NUM_DUMMY_TARGETS}")
-    endwhile()
-    add_library("${interface_target_name}" INTERFACE IMPORTED)
-    if("${CMAKE_VERSION}" VERSION_LESS "3.13.0")
-      set_property(
-        TARGET
-        "${interface_target_name}"
-        APPEND PROPERTY
-        INTERFACE_LINK_LIBRARIES "${library}")
-    else()
-      target_link_options("${interface_target_name}" INTERFACE "${library}")
-    endif()
-    list(APPEND comportement_control_LIBRARIES "${interface_target_name}")
   elseif(TARGET ${library})
     list(APPEND comportement_control_LIBRARIES ${library})
   elseif(IS_ABSOLUTE ${library})
@@ -154,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/jennie/irecheck/iReCheck/QT_ws/install/lib;/home/jennie/irecheck/iReCheck/QT_ws/devel/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/comportement_control/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qtrobot_ikfast_right_arm_plugin/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qtrobot_ikfast_left_arm_plugin/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/motors_moveit/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/left_arm_config/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/left_arm_description/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_tutorials/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_visual_tools/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/rviz_visual_tools/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qtrobot_config/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/qt_control/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/panda_moveit_config/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/new_qt/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_control_interface/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_simple_controller_manager/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_setup_assistant/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_runtime/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_visualization/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_planners_chomp/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_jog_arm/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_planning_interface/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_benchmarks/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_warehouse/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_robot_interaction/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_manipulation/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_move_group/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_planners_ompl/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_kinematics/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_fake_controller_manager/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_planning/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_perception/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros_occupancy_map_monitor/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_ros/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_plugins/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_planners/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_chomp_optimizer_adapter/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/chomp_motion_planner/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_core/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_msgs/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit_commander/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/moveit/lib;/home/jennie/irecheck/iReCheck/qtrobot_ws/devel_isolated/geometric_shapes/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/isir/iReCheck/QT_ws/install/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
