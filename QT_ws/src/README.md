@@ -1,6 +1,6 @@
-#Controlling QTrobot´s behaviours
+# Controlling QTrobot´s behaviours
 
-##Preparation and requirements
+## Preparation and requirements
 Before running the program, please ensure that following setups of your QTrobot and your machine which running the program.
 
 ### QTrobot setup
@@ -21,15 +21,17 @@ To be sure that new type of msg are successfully added in the QTrobot workspace,
 qtrobot@QTXXX: rosmsg show qt_behaviour_control/GestureCommand
 ```
 You will see:
-	``` 
-	string name
-	float32 speed
-	```
+``` 
+string name
+float32 speed
+```
 
 ### PC setup
-**add package to the workspace and catkin_make**
-Please copy the package comportement_control to your ROS workspace and `catkin_make` your workspace and source devel/setup.bash```. Of course if you don´t have a ROS workspace, you can directly use this folder as a workspace by catkin_make this folder.
-**Download PyQt5**
+**add package to the workspace and catkin_make:**
+
+Please copy the package comportement_control to your ROS workspace and `catkin_make` your workspace and `source devel/setup.bash`. Of course if you don´t have a ROS workspace, you can directly use this folder as a workspace by catkin_make this folder.
+**Download PyQt5:**
+
 Because PyQt5 do not support pyhton 2.7 so you need install python 3 or newer. Then you need to install PyQt5:
 ``` 
 $ python3 -m pip install PyQt5 
