@@ -1,2 +1,4 @@
 "QT/cry";1;
 "QT/cry";"j'écris vraiment très mal";
+"QT/cry";"Olala, mon écriture n'est pas terrible"
+"QT/cry";"J'ai mal écrit"

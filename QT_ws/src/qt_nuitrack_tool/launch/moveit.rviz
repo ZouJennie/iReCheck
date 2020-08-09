@@ -1,0 +1,301 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 84
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /TF1
+        - /TF1/Frames1
+      Splitter Ratio: 0.742560029
+    Tree Height: 837
+  - Class: rviz/Help
+    Name: Help
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.0299999993
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        Camera_link:
+          Value: true
+        HeadPitch_link:
+          Value: false
+        HeadYaw_link:
+          Value: false
+        Head_0:
+          Value: true
+        LeftElbowRoll_link:
+          Value: false
+        LeftHand_link:
+          Value: false
+        LeftShoulderPitch_link:
+          Value: false
+        LeftShoulderRoll_link:
+          Value: false
+        Left_Ankle_0:
+          Value: true
+        Left_Collar_0:
+          Value: true
+        Left_Elbow_0:
+          Value: true
+        Left_Hand_0:
+          Value: true
+        Left_Hip_0:
+          Value: true
+        Left_Knee_0:
+          Value: true
+        Left_Shoulder_0:
+          Value: true
+        Left_Wrist_0:
+          Value: true
+        Neck_0:
+          Value: true
+        RightElbowRoll_link:
+          Value: false
+        RightHand_link:
+          Value: false
+        RightShoulderPitch_link:
+          Value: false
+        RightShoulderRoll_link:
+          Value: false
+        Right_Ankle_0:
+          Value: true
+        Right_Collar_0:
+          Value: true
+        Right_Elbow_0:
+          Value: true
+        Right_Hand_0:
+          Value: true
+        Right_Hip_0:
+          Value: true
+        Right_Knee_0:
+          Value: true
+        Right_Shoulder_0:
+          Value: true
+        Right_Wrist_0:
+          Value: true
+        Torso_0:
+          Value: true
+        Waist_0:
+          Value: true
+        base_link:
+          Value: true
+        nuitrack_frame:
+          Value: false
+      Marker Scale: 0.300000012
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: false
+      Tree:
+        base_link:
+          HeadYaw_link:
+            HeadPitch_link:
+              Camera_link:
+                nuitrack_frame:
+                  Head_0:
+                    {}
+                  Left_Ankle_0:
+                    {}
+                  Left_Collar_0:
+                    {}
+                  Left_Elbow_0:
+                    {}
+                  Left_Hand_0:
+                    {}
+                  Left_Hip_0:
+                    {}
+                  Left_Knee_0:
+                    {}
+                  Left_Shoulder_0:
+                    {}
+                  Left_Wrist_0:
+                    {}
+                  Neck_0:
+                    {}
+                  Right_Ankle_0:
+                    {}
+                  Right_Collar_0:
+                    {}
+                  Right_Elbow_0:
+                    {}
+                  Right_Hand_0:
+                    {}
+                  Right_Hip_0:
+                    {}
+                  Right_Knee_0:
+                    {}
+                  Right_Shoulder_0:
+                    {}
+                  Right_Wrist_0:
+                    {}
+                  Torso_0:
+                    {}
+                  Waist_0:
+                    {}
+          LeftShoulderPitch_link:
+            LeftShoulderRoll_link:
+              LeftElbowRoll_link:
+                LeftHand_link:
+                  {}
+          RightShoulderPitch_link:
+            RightShoulderRoll_link:
+              RightElbowRoll_link:
+                RightHand_link:
+                  {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        HeadPitch_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        HeadYaw_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LeftElbowRoll_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LeftHand_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LeftShoulderPitch_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LeftShoulderRoll_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Link Tree Style: Links in Alphabetic Order
+        RightElbowRoll_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        RightHand_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        RightShoulderPitch_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        RightShoulderRoll_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: base_link
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+  Value: true
+  Views:
+    Current:
+      Class: rviz/XYOrbit
+      Distance: 2.21211147
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.0599999987
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0.029078126
+        Y: 0.0414494276
+        Z: -1.49005785e-08
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.0500000007
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.00999999978
+      Pitch: 0.245202333
+      Target Frame: base_link
+      Value: XYOrbit (rviz)
+      Yaw: 6.16493416
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1056
+  Help:
+    collapsed: false
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000002f6000003dafc0200000008fb000000100044006900730070006c0061007900730100000028000003da000000d700fffffffb0000000800480065006c00700000000342000000bb0000007300fffffffb0000000a0056006900650077007300000003b0000000b0000000ad00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006701000002680000019a0000000000000000fb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff000000000000000000000443000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Views:
+    collapsed: false
+  Width: 1855
+  X: 65
+  Y: 24

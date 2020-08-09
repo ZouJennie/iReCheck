@@ -1,8 +1,8 @@
-# Install script for directory: /home/isir/iReCheck/QT_ws/src/comportement_control
+# Install script for directory: /home/jennie/irecheck/iReCheck/QT_ws/src/comportement_control
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/isir/iReCheck/QT_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/jennie/irecheck/iReCheck/QT_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,53 +33,53 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/comportement_control/msg" TYPE FILE FILES "/home/isir/iReCheck/QT_ws/src/comportement_control/msg/GestureCommand.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/comportement_control/msg" TYPE FILE FILES "/home/jennie/irecheck/iReCheck/QT_ws/src/comportement_control/msg/GestureCommand.msg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/comportement_control/cmake" TYPE FILE FILES "/home/isir/iReCheck/QT_ws/build/comportement_control/catkin_generated/installspace/comportement_control-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/comportement_control/cmake" TYPE FILE FILES "/home/jennie/irecheck/iReCheck/QT_ws/build/comportement_control/catkin_generated/installspace/comportement_control-msg-paths.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/isir/iReCheck/QT_ws/devel/include/comportement_control")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/jennie/irecheck/iReCheck/QT_ws/devel/include/comportement_control")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/isir/iReCheck/QT_ws/devel/share/roseus/ros/comportement_control")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/jennie/irecheck/iReCheck/QT_ws/devel/share/roseus/ros/comportement_control")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/isir/iReCheck/QT_ws/devel/share/common-lisp/ros/comportement_control")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/jennie/irecheck/iReCheck/QT_ws/devel/share/common-lisp/ros/comportement_control")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/isir/iReCheck/QT_ws/devel/share/gennodejs/ros/comportement_control")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/jennie/irecheck/iReCheck/QT_ws/devel/share/gennodejs/ros/comportement_control")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/isir/iReCheck/QT_ws/devel/lib/python2.7/dist-packages/comportement_control")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/jennie/irecheck/iReCheck/QT_ws/devel/lib/python2.7/dist-packages/comportement_control")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/isir/iReCheck/QT_ws/devel/lib/python2.7/dist-packages/comportement_control")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/jennie/irecheck/iReCheck/QT_ws/devel/lib/python2.7/dist-packages/comportement_control")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/isir/iReCheck/QT_ws/build/comportement_control/catkin_generated/installspace/comportement_control.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jennie/irecheck/iReCheck/QT_ws/build/comportement_control/catkin_generated/installspace/comportement_control.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/comportement_control/cmake" TYPE FILE FILES "/home/isir/iReCheck/QT_ws/build/comportement_control/catkin_generated/installspace/comportement_control-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/comportement_control/cmake" TYPE FILE FILES "/home/jennie/irecheck/iReCheck/QT_ws/build/comportement_control/catkin_generated/installspace/comportement_control-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/comportement_control/cmake" TYPE FILE FILES
-    "/home/isir/iReCheck/QT_ws/build/comportement_control/catkin_generated/installspace/comportement_controlConfig.cmake"
-    "/home/isir/iReCheck/QT_ws/build/comportement_control/catkin_generated/installspace/comportement_controlConfig-version.cmake"
+    "/home/jennie/irecheck/iReCheck/QT_ws/build/comportement_control/catkin_generated/installspace/comportement_controlConfig.cmake"
+    "/home/jennie/irecheck/iReCheck/QT_ws/build/comportement_control/catkin_generated/installspace/comportement_controlConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/comportement_control" TYPE FILE FILES "/home/isir/iReCheck/QT_ws/src/comportement_control/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/comportement_control" TYPE FILE FILES "/home/jennie/irecheck/iReCheck/QT_ws/src/comportement_control/package.xml")
 endif()
 

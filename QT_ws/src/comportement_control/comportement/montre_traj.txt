@@ -1,2 +1,0 @@
-"QT/challenge";0.85;
-"QT/talking";"Peux-tu me montrer le trajet avec ton doigt?"

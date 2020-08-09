@@ -1,0 +1,8 @@
+prefix=/home/jennie/irecheck/iReCheck/QT_ws/install
+
+Name: qt_nuitrack_tool
+Description: Description of qt_nuitrack_tool
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,4 @@
+"QT/protect";1;
+"QT/afraidshort";"aïe aïe aïe"
+"QT/afraidshort";"Ouilleu"
+"QT/afraidshort";"aoutch, ça fait mal!"

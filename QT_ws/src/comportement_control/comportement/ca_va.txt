@@ -1,0 +1,4 @@
+"";0;
+"QT/showing_smile";"Comment vas-tu aujourd'hui?"
+"QT/showing_smile";"Comment ça va?"
+"QT/showing_smile";"Tu vas bien?"

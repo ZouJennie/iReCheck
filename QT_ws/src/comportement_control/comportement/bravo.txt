@@ -1,2 +1,5 @@
-"QT/handclap";0.8;
-"QT/happy";"Bravo";
+"QT/happy";0.8;
+"QT/happy";"Félicitations";
+"QT/happy";"Bravooo?";
+"QT/happy";"Bien joué "+ Prenom;
+"QT/happy";"Félicitations " + Prenom;

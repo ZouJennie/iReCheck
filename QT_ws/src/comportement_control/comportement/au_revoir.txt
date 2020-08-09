@@ -1,2 +1,4 @@
 "QT/bye-bye";0.8;
 "QT/showing_smile";"Au revoir";
+"QT/showing_smile";"Bye-bye";
+"QT/showing_smile";"A la prochaine fois";

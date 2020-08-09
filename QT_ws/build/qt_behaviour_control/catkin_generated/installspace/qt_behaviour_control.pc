@@ -1,0 +1,8 @@
+prefix=/home/jennie/irecheck/iReCheck/QT_ws/install
+
+Name: qt_behaviour_control
+Description: Description of qt_behaviour_control
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

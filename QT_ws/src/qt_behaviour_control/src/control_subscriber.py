@@ -11,7 +11,6 @@ from qt_gesture_controller.srv import *
 from qt_robot_interface.srv import *
 from qt_motors_controller.srv import *
 
-
 def lang_callback(data):
    	rospy.loginfo(rospy.get_caller_id()+"I heard %s",data.data)
 #	print type(eval(data.data))
@@ -48,17 +47,21 @@ def set_head_velocity(data):
 	except rospy.ServiceException, e:
 		print "Service call failed: %s." % e
 
-def command_listener():
+def command_listener(arg):
 	#creat ros node
 	rospy.init_node('behaviour_control', anonymous=True)
+	#load patient info
+
 	#creat ros subscriber
 	rospy.Subscriber('language',String,lang_callback)
-	rospy.Subscriber('comportement/gesture_name',GestureCommand, gesture_command)
+	rospy.Subscriber('comportement/gesture_name',GestureCommand, gesture_command
 	rospy.Subscriber('head_velocity',Float64,set_head_velocity)
 	
 	rospy.spin()
-	
+
 
 if __name__ == "__main__":
+
+
 	command_listener()
 	

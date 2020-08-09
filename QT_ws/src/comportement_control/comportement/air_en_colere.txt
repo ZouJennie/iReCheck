@@ -1,2 +1,0 @@
-"QT/curious";0.8;
-"QT/confused";"Tu as l'air en colère";

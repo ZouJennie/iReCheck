@@ -1,2 +1,0 @@
-"QT/curious";0.8;
-"QT/confused";"Je ne suis pas sure d'avoir compris, tu m'expliquer?";

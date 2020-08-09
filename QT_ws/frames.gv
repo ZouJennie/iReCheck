@@ -1,0 +1,38 @@
+digraph G {
+"HeadPitch_link" -> "Camera_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1594129929.008 sec old)\nBuffer length: 0.000 sec\n"];
+"HeadYaw_link" -> "HeadPitch_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.008 Hz\nMost recent transform: 1591886412.351 ( 2243516.656 sec old)\nBuffer length: 4.765 sec\n"];
+"LeftElbowRoll_link" -> "LeftHand_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1594129929.008 sec old)\nBuffer length: 0.000 sec\n"];
+"LeftShoulderRoll_link" -> "LeftElbowRoll_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.008 Hz\nMost recent transform: 1591886412.351 ( 2243516.656 sec old)\nBuffer length: 4.765 sec\n"];
+"RightElbowRoll_link" -> "RightHand_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1594129929.008 sec old)\nBuffer length: 0.000 sec\n"];
+"RightShoulderRoll_link" -> "RightElbowRoll_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.008 Hz\nMost recent transform: 1591886412.351 ( 2243516.656 sec old)\nBuffer length: 4.765 sec\n"];
+"base_link" -> "HeadYaw_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.008 Hz\nMost recent transform: 1591886412.351 ( 2243516.656 sec old)\nBuffer length: 4.765 sec\n"];
+"LeftShoulderPitch_link" -> "LeftShoulderRoll_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.008 Hz\nMost recent transform: 1591886412.351 ( 2243516.656 sec old)\nBuffer length: 4.765 sec\n"];
+"base_link" -> "LeftShoulderPitch_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.008 Hz\nMost recent transform: 1591886412.351 ( 2243516.656 sec old)\nBuffer length: 4.765 sec\n"];
+"RightShoulderPitch_link" -> "RightShoulderRoll_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.008 Hz\nMost recent transform: 1591886412.351 ( 2243516.656 sec old)\nBuffer length: 4.765 sec\n"];
+"base_link" -> "RightShoulderPitch_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.008 Hz\nMost recent transform: 1591886412.351 ( 2243516.656 sec old)\nBuffer length: 4.765 sec\n"];
+"nuitrack_frame" -> "Head_0"[label="Broadcaster: /skeletons\nAverage rate: 26.823 Hz\nMost recent transform: 1594129928.992 ( 0.016 sec old)\nBuffer length: 4.026 sec\n"];
+"Camera_link" -> "nuitrack_frame"[label="Broadcaster: /skeletons\nAverage rate: 26.901 Hz\nMost recent transform: 1594129928.961 ( 0.047 sec old)\nBuffer length: 3.978 sec\n"];
+"nuitrack_frame" -> "Neck_0"[label="Broadcaster: /skeletons\nAverage rate: 26.855 Hz\nMost recent transform: 1594129928.993 ( 0.015 sec old)\nBuffer length: 4.022 sec\n"];
+"nuitrack_frame" -> "Torso_0"[label="Broadcaster: /skeletons\nAverage rate: 26.852 Hz\nMost recent transform: 1594129928.995 ( 0.013 sec old)\nBuffer length: 4.022 sec\n"];
+"nuitrack_frame" -> "Waist_0"[label="Broadcaster: /skeletons\nAverage rate: 26.847 Hz\nMost recent transform: 1594129928.996 ( 0.012 sec old)\nBuffer length: 4.023 sec\n"];
+"nuitrack_frame" -> "Left_Collar_0"[label="Broadcaster: /skeletons\nAverage rate: 26.846 Hz\nMost recent transform: 1594129928.997 ( 0.011 sec old)\nBuffer length: 4.023 sec\n"];
+"nuitrack_frame" -> "Left_Shoulder_0"[label="Broadcaster: /skeletons\nAverage rate: 26.846 Hz\nMost recent transform: 1594129928.998 ( 0.010 sec old)\nBuffer length: 4.023 sec\n"];
+"nuitrack_frame" -> "Left_Elbow_0"[label="Broadcaster: /skeletons\nAverage rate: 26.843 Hz\nMost recent transform: 1594129928.999 ( 0.009 sec old)\nBuffer length: 4.023 sec\n"];
+"nuitrack_frame" -> "Left_Wrist_0"[label="Broadcaster: /skeletons\nAverage rate: 26.842 Hz\nMost recent transform: 1594129929.000 ( 0.008 sec old)\nBuffer length: 4.024 sec\n"];
+"nuitrack_frame" -> "Left_Hand_0"[label="Broadcaster: /skeletons\nAverage rate: 26.841 Hz\nMost recent transform: 1594129929.001 ( 0.007 sec old)\nBuffer length: 4.024 sec\n"];
+"nuitrack_frame" -> "Right_Collar_0"[label="Broadcaster: /skeletons\nAverage rate: 26.841 Hz\nMost recent transform: 1594129929.001 ( 0.006 sec old)\nBuffer length: 4.024 sec\n"];
+"nuitrack_frame" -> "Right_Shoulder_0"[label="Broadcaster: /skeletons\nAverage rate: 26.842 Hz\nMost recent transform: 1594129929.002 ( 0.006 sec old)\nBuffer length: 4.024 sec\n"];
+"nuitrack_frame" -> "Right_Elbow_0"[label="Broadcaster: /skeletons\nAverage rate: 26.843 Hz\nMost recent transform: 1594129929.003 ( 0.005 sec old)\nBuffer length: 4.023 sec\n"];
+"nuitrack_frame" -> "Right_Wrist_0"[label="Broadcaster: /skeletons\nAverage rate: 26.840 Hz\nMost recent transform: 1594129929.004 ( 0.004 sec old)\nBuffer length: 4.024 sec\n"];
+"nuitrack_frame" -> "Right_Hand_0"[label="Broadcaster: /skeletons\nAverage rate: 26.836 Hz\nMost recent transform: 1594129929.005 ( 0.003 sec old)\nBuffer length: 4.024 sec\n"];
+"nuitrack_frame" -> "Left_Hip_0"[label="Broadcaster: /skeletons\nAverage rate: 26.835 Hz\nMost recent transform: 1594129929.005 ( 0.003 sec old)\nBuffer length: 4.025 sec\n"];
+"nuitrack_frame" -> "Left_Knee_0"[label="Broadcaster: /skeletons\nAverage rate: 26.835 Hz\nMost recent transform: 1594129929.006 ( 0.002 sec old)\nBuffer length: 4.025 sec\n"];
+"nuitrack_frame" -> "Left_Ankle_0"[label="Broadcaster: /skeletons\nAverage rate: 26.834 Hz\nMost recent transform: 1594129929.006 ( 0.002 sec old)\nBuffer length: 4.025 sec\n"];
+"nuitrack_frame" -> "Right_Hip_0"[label="Broadcaster: /skeletons\nAverage rate: 26.833 Hz\nMost recent transform: 1594129929.007 ( 0.001 sec old)\nBuffer length: 4.025 sec\n"];
+"nuitrack_frame" -> "Right_Knee_0"[label="Broadcaster: /skeletons\nAverage rate: 26.899 Hz\nMost recent transform: 1594129928.960 ( 0.048 sec old)\nBuffer length: 3.978 sec\n"];
+"nuitrack_frame" -> "Right_Ankle_0"[label="Broadcaster: /skeletons\nAverage rate: 26.900 Hz\nMost recent transform: 1594129928.960 ( 0.047 sec old)\nBuffer length: 3.978 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1594129929.008"[ shape=plaintext ] ;
+ }->"base_link";
+}

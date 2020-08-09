@@ -1,3 +1,2 @@
-"QT/strong";0.95;
-"QT/talking";"Oui mais moi, tu sais, j'ai des muscles en plastique"
-"QT/one_eye_wink";""
+"QT/strong";1;
+"QT/one_eye_wink";"Oui mais moi, tu sais, j'ai des muscles en plastique"

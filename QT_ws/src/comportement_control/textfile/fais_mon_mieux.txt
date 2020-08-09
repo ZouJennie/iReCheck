@@ -1,3 +1,0 @@
-0;0;0.5;-1;-1.5;-0.5;-1;-1.5;"QT/talking";"mais tu sais je fais comme je peux";-1;
-0;0;0.5;-1;-0.7;-0.5;-1;-0.7;"QT/talking";"je fais beaucoup d'efforts";-1;
-0;0;1.57;-1.0175;-0.5916;-1.56;-1.0175;-0.5916;"";"";-1;

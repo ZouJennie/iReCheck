@@ -1,2 +1,0 @@
-"QT/hi";0.8;
-"QT/happy";"Bonjour, je m'appelle QT";
