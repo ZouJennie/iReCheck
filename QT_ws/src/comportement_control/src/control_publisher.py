@@ -35,19 +35,19 @@ class RobotBehaviour(object):
 		global Prenom 
 		Prenom = prenom
 		# import the file of behaviours
-		f = open("/home/jennie/irecheck/iReCheck/QT_ws/src/comportement_control/comportement/"+name+".txt", "r")
+		f = open("/home/isir/iReCheck/QT_ws/src/comportement_control/comportement/"+name+".txt", "r")
 		line = f.readline()
 		a=line.split(";") 
 		# first line is infomation of gesture 
 		self.gesture_name = a[0]
 		#print self.gesture_name
 		self.speed = float(a[1])
-		
+		print(type(Prenom))
 		# next lines are info of speech, emotion and head position
 		line = f.readline()
 		# save information
 		while line:
-			a = line.split(";")   
+			a = line.split(";")
 			self.emotion.append(eval(a[0]))
 			self.speech.append(eval(a[1]))	
 			line = f.readline()

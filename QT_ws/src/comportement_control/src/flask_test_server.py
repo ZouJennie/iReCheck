@@ -5,6 +5,9 @@ import sys
 import copy
 import rospy
 from control_publisher import RobotBehaviour
+from threading import Thread
+
+Thread(target=lambda:rospy.init_node("flask_interface",anonymous=True,disable_signals=True)).start()
 
 app = Flask(__name__)
 app.secret_key = "woz" 
@@ -50,8 +53,8 @@ def scenarios(name=None):
 @app.route("/woz",methods=['POST'])
 def woz_command():
     payload = request.get_json() 
-    prenom = request.form.get('fname')
-    print(payload)
+    prenom = session.get('user_name')
+    print(prenom)
     behaviour = RobotBehaviour()
     behaviour.load_info(payload['command'],prenom)
     behaviour.realisation()
@@ -59,8 +62,4 @@ def woz_command():
 
 	
 if __name__ == "__main__":
-    rospy.init_node("flask_interface",anonymous=True)
-    try:
-        app.run(host= '0.0.0.0',threaded=True)
-    except KeyboardInterrupt:
-        print("exiting")
+    app.run(host= '0.0.0.0',debug=True)

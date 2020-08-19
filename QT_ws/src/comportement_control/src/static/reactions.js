@@ -81,7 +81,7 @@ var commandsList = [
 					["Comment ?", "repete"],
 					["Oui", "oui"],
 					["Non", "non"]	]	],
-	["#fff68a", [	["Bravo", "Bravo"],
+	["#fff68a", [	["Bravo", "bravo"],
 					["Je suis fort", "je_suis_fort"],
 					["C'est bien", "cest_bien"],
 					["Tu as bien fait", "tu_es_fort"],
