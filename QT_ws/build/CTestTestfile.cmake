@@ -6,6 +6,3 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
 subdirs(comportement_control)
-subdirs(qt_behaviour_control)
-subdirs(qt_nuitrack_app)
-subdirs(qt_nuitrack_tool)

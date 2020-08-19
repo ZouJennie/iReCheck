@@ -127,9 +127,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/jennie/irecheck/iReCheck/QT_ws/build/gtest/cmake_install.cmake")
   include("/home/jennie/irecheck/iReCheck/QT_ws/build/comportement_control/cmake_install.cmake")
-  include("/home/jennie/irecheck/iReCheck/QT_ws/build/qt_behaviour_control/cmake_install.cmake")
-  include("/home/jennie/irecheck/iReCheck/QT_ws/build/qt_nuitrack_app/cmake_install.cmake")
-  include("/home/jennie/irecheck/iReCheck/QT_ws/build/qt_nuitrack_tool/cmake_install.cmake")
 
 endif()
 

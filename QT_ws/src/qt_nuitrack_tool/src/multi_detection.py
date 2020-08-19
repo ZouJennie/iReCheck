@@ -7,7 +7,7 @@ import usb.util
 import time
 import sys 
 from std_msgs.msg import Float64MultiArray
-from trajectory_msgs.msg import JointTrajectory
+from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from qt_multi_detection.msg import * 
 from tuning import Tuning
 
@@ -23,9 +23,15 @@ class MultiDetection(object):
 		self.translation = np.zeros([10,3])
 		self.angle = []
 		self.dev = dev
-		self.goal = JointTrajectory
-		self.goal.joint_names = ['HeadPitch']
-		self.goal.points = [0]*2
+		self.goal = JointTrajectory()
+		self.goal.joint_names = ["HeadYaw","HeadPitch"]
+		self.point_init = JointTrajectoryPoint()
+		self.point_init.positions = [0,0]
+		self.point_final = JointTrajectoryPoint()
+		self.point_final.positions = [0,0]
+		self.goal.points.append(self.point_init)
+		self.goal.points.append(self.point_final)
+		self.record = [0,0]
 	
 	def load_info(self,data):
 		""" Load data heard from nuitrack"""
@@ -36,8 +42,8 @@ class MultiDetection(object):
 		#		print("test 1")
 				i = self.id.index(data.skeletons[n].id)
 					#print("test 2")
-				self.translation[i,:] = (np.array(self.joints[i].real)/1000.0).tolist()
 				self.joints[i] = data.skeletons[n].joints[1]
+				self.translation[i,:] = (np.array(self.joints[i].real)/1000.0).tolist()
 				self.angle[i] = np.arctan2(self.translation[i,0],self.translation[i,1])
 			else:
 				print("test 3")
@@ -47,9 +53,12 @@ class MultiDetection(object):
 				self.translation[i,:] = (np.array(self.joints[i].real)/1000.0).tolist()
 				self.angle.append(np.arctan2(self.translation[i,0],self.translation[i,1]))
 		#print (self.id)
-		angle = min(abs(self.angle))/180*np.pi
+		min_angle = 180
+		for i in range(0,len(self.angle)):
+			if abs(self.angle[i]) < abs(min_angle):
+				min_angle = self.angle[i]
+		angle = min_angle/180.0*np.pi
 		self.head_control(angle)
-		self.goal.points[0]=angle
 
 
 	def msg_listener(self):
@@ -59,14 +68,17 @@ class MultiDetection(object):
 
 	def do(self):
 		microphone = Tuning(dev)
+		print("tunning succes")
 		while not rospy.is_shutdown():
-			if not microphone.is_voice():
+			if microphone.is_voice():
+				mic = abs(microphone.direction - 180)
+				angle = (mic - 90.0)/180.0*np.pi
+				rospy.loginfo("mic: %d , head: %d" % (mic, angle))
+				self.head_control(angle)
+				self.msg_listener()
+			else:
+				#print("debug else")
 				continue
-		mic = abs(microphone.direction - 180)
-		angle = (mic - MICROPHONE_ANGLE_OFFSET)/180*np.pi
-		rospy.loginfo("mic: %d , head: %d" % (mic, angle))
-		self.head_control(angle)
-		self.msg_listener()
 		rospy.spin()
 
 
@@ -80,9 +92,16 @@ class MultiDetection(object):
 				rospy.logerr("Timeout while waiting for publisher connection!")
 				sys.exit()
 			rospy.sleep(1)
-		self.goal.points[1] = angle
-		head_goal.publish(goal)
-		self.goal.points[0] = self.goal.points[1]
+
+		self.point_init.positions = self.record
+		self.point_final.positions = [self.record[0]+angle,0]
+		self.goal.points[0] = self.point_init
+		self.goal.points[1] = self.point_final
+		self.goal.points[1].time_from_start.secs = 2
+		print(self.goal)
+		head_goal.publish(self.goal)
+		self.record = self.point_final.positions
+		
 
 
 

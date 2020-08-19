@@ -13,6 +13,7 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
+#include <QtGui/QDateEdit>
 #include <QtGui/QHBoxLayout>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
@@ -20,6 +21,7 @@
 #include <QtGui/QMenuBar>
 #include <QtGui/QPushButton>
 #include <QtGui/QStatusBar>
+#include <QtGui/QTextEdit>
 #include <QtGui/QToolBar>
 #include <QtGui/QVBoxLayout>
 #include <QtGui/QWidget>
@@ -32,6 +34,8 @@ public:
     QWidget *centralWidget;
     QWidget *horizontalLayoutWidget;
     QHBoxLayout *horizontalLayout;
+    QTextEdit *textEdit;
+    QDateEdit *dateEdit;
     QWidget *verticalLayoutWidget;
     QVBoxLayout *verticalLayout;
     QVBoxLayout *verticalLayout_8;
@@ -102,6 +106,16 @@ public:
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        textEdit = new QTextEdit(horizontalLayoutWidget);
+        textEdit->setObjectName(QString::fromUtf8("textEdit"));
+
+        horizontalLayout->addWidget(textEdit);
+
+        dateEdit = new QDateEdit(horizontalLayoutWidget);
+        dateEdit->setObjectName(QString::fromUtf8("dateEdit"));
+
+        horizontalLayout->addWidget(dateEdit);
+
         verticalLayoutWidget = new QWidget(centralWidget);
         verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
         verticalLayoutWidget->setGeometry(QRect(630, 30, 601, 591));
