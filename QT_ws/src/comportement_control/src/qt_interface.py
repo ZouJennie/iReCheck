@@ -151,7 +151,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow,RobotBehaviour):
 
 
 if __name__ == '__main__':
-	
+	rospy.init_node("qt_interface",anonymous=True)
 	app = QtWidgets.QApplication(sys.argv)
 	window = loginDlg()
 	window.exec_()

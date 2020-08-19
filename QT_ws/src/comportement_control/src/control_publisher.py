@@ -52,23 +52,25 @@ class RobotBehaviour(object):
 			self.speech.append(eval(a[1]))	
 			line = f.readline()
 		f.close()
+		print("Debug 1")
 
 	
 	def realisation(self):
-		rospy.init_node('behaviour_command', anonymous=True)
+		#rospy.init_node('behaviour_command', anonymous=True)
 		# creat publisher
 		say = rospy.Publisher('/qt_robot/speech/say', String, queue_size=10)
 		emo = rospy.Publisher('/qt_robot/emotion/show',String, queue_size=10)
 		language = rospy.Publisher('language',String,queue_size=10)
 		language.publish('"fr-FR"')
 		gesture = rospy.Publisher('comportement/gesture_name',GestureCommand,queue_size=10)
-		Prenom = "David"
+		#Prenom = "David"
 	
 		#while (say.get_num_connections() == 0) :
 		#	rospy.loginfo("waiting for subscriber connections...")
 		#	rospy.sleep(1)
 		
 		# initialisation of gesture
+		print("Debug 2")
 		target_gesture = GestureCommand()
 		# command gesture
 		target_gesture.name = self.gesture_name
@@ -79,13 +81,13 @@ class RobotBehaviour(object):
 		# command emotion and speech
 		if len(self.emotion) == 1:
 			#print self.speech[i]
-			rospy.sleep(1)
+			rospy.sleep(3)
 			emo.publish(self.emotion[0])
 			#rospy.sleep(1)
 			say.publish(self.speech[0])
 		else :
 			i = random.randint(0,len(self.emotion)-1)
-			rospy.sleep(1)
+			rospy.sleep(3)
 			emo.publish(self.emotion[i])
 			say.publish(self.speech[i])
 
